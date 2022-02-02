@@ -1,0 +1,401 @@
+body,
+html {
+  height: 100%;
+  font-family: "Alegreya Sans", sans-serif;
+  
+}
+.btn {
+  transition: all 0.4s ease-in-out;
+}
+.card{
+  margin-bottom: 15px;
+  
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  #header {
+    text-align: center;
+  }
+  #header img {
+    margin: 0 auto;
+  }
+
+  #social, #who, #why, #customers {
+    text-align: center;
+  }
+  #social hr,
+  #who hr,
+  #work hr {
+    margin: 8% auto;
+  }
+  
+  #who img {
+    margin-top: 15%;
+  }
+
+  #footer{
+    text-align: center;
+  }
+}
+
+/* Nav */
+
+.navbar {
+  background-color: rgba(21, 31, 33, 0.5);
+  border-bottom: 1px solid #dedede;
+  font-family: "Alegreya Sans", sans-serif;
+}
+.navbar .navbar-nav .nav-link {
+  color: #d1d1d1;
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+
+.navbar-toggler-icon {
+  color: #fff;
+}
+.navbar p{
+  font-family: 'Lobster', cursive;
+  color: #be2835;
+  font-size: 40px;
+}
+
+/* HEADER */
+
+#header {
+  background: url(../img/stars-bg.jpg) center center no-repeat;
+  background-size: cover;
+  height: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+#header p{
+  font-family: dancing-script;
+}
+#header img {
+  padding: 0 0 20px 0;
+ width: 300px;
+ height: 300px;
+}
+#header .header-right {
+  background-color: rgba(0, 0, 0, 0.5);
+  /* padding: 30px; */
+  border-radius: 10px;
+}
+#header .fs {
+  margin: 5% 0;
+}
+
+#header a .fa {
+  color: #fff;
+}
+#header a .fa:hover {
+  color: #ccc;
+}
+#header h2 {
+  font-family:fantasy;
+  /* letter-spacing: 0.1em; */
+  word-spacing: 0.2em;
+  font-size: 30px;
+}
+#header .quote{
+  font-family:'Raleway', sans-serif;
+  color: #00c0f9;
+  font-size: 40px;
+  
+}
+
+/* SOCIAL */
+
+#social {
+  padding: 4.25rem 0;
+}
+
+#social .fa {
+  font-size: 1.5rem;
+  color: #be2835;
+  border: 2px solid #be2835;
+  width: 60px;
+  height: 60px;
+  border-radius: 30%;
+  text-align: center;
+  padding: 30% 0;
+  margin-top: 10px;
+  transition: all 0.4s ease-in-out;
+}
+
+#social .fa:hover {
+  color: #fff;
+  background: #be2835;
+}
+
+/* WHO */
+
+#who {
+  padding: 5rem 0;
+  background-color: #f6f6f6;
+}
+
+#who .btn-who {
+  background-color: #be2835;
+  color: #fff;
+  width: 50%;
+}
+
+#who .btn-who:hover {
+  background-color: transparent;
+  border: 1px solid #be2835;
+  color: #be2835;
+}
+/* skills */
+
+.skill-box{
+  width: 500px;
+  border-radius: 20px;
+  background: #f7f9f9;
+  color:#051014;
+  box-shadow:  0 0 16px 0 #cecfec;
+  padding:  2.5rem 2rem;
+}
+
+.heading{
+  font-size: 1.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.skill{
+  margin-bottom: 1rem;
+}
+
+.skill:last-child {
+  margin-bottom: 0;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.bar {
+  background: #cecfec;
+  border-radius: 20px;
+  height: 1rem;
+  overflow: hidden;
+}
+.html-bar , .css-bar, .js-bar, .react-bar, .node-bar, .next-bar, .adobe-bar, .sketch-bar, .UI-bar, .jest-bar {
+  width: 0;
+  height: inherit;
+  background: linear-gradient(135deg, #279af1, #00c0f9);
+
+}
+.html-bar {
+  animation: html-fill 2s ease-in-out forwards;
+}
+
+@keyframes html-fill {
+  100% {
+    width: 96%;
+  }
+}
+.css-bar {
+  animation: css-fill 2s ease-in-out forwards;
+}
+@keyframes css-fill {
+  100% {
+    width: 90%;
+  }
+}
+
+.js-bar {
+  animation: js-fill 2s ease-in-out forwards;
+}
+@keyframes js-fill {
+  100% {
+    width: 80%;
+  }
+}
+
+.react-bar {
+  animation: react-fill 2s ease-in-out forwards;
+}
+@keyframes react-fill {
+  100% {
+    width: 70%;
+  }
+}
+
+.next-bar {
+  animation: next-fill 2s ease-in-out forwards;
+}
+@keyframes next-fill {
+  100% {
+    width: 40%;
+  }
+}
+
+.node-bar {
+  animation: node-fill 2s ease-in-out forwards;
+}
+@keyframes node-fill {
+  100% {
+    width: 30%;
+  }
+}
+
+
+.jest-bar {
+  animation: jest-fill 2s ease-in-out forwards;
+}
+@keyframes jest-fill {
+  100% {
+    width: 30%;
+  }
+}
+
+
+.UI-bar {
+  animation: UI-fill 2s ease-in-out forwards;
+}
+@keyframes UI-fill {
+  100% {
+    width: 50%;
+  }
+}
+
+.adobe-bar {
+  animation: adobe-fill 2s ease-in-out forwards;
+}
+@keyframes adobe-fill {
+  100% {
+    width: 40%;
+  }
+}
+
+
+.sketch-bar {
+  animation: sketch-fill 2s ease-in-out forwards;
+}
+@keyframes sketch-fill {
+  100% {
+    width: 50%;
+  }
+}
+
+
+/* WORK */
+
+#work {
+    padding:5rem 0;
+}
+
+#work .work-img {
+    position:relative;
+}
+
+#work .card {
+    transition: all .2s ease-in-out;
+}
+#work .card:hover{
+  transform: scale(1.15);
+}
+
+#work .card{
+  height: 90%;
+  background-color: #000000;
+  color: white;
+  align-items: center;
+  text-align: center;
+  
+}
+#work .work-img .img-overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    background-color:rgba(0,0,0,0.5);
+    width:100%;
+    height:100%;
+    background-image: url('../img/eye.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    opacity:0;
+    z-index:0;
+    transition:all 0.3s ease-in-out;
+}
+
+#work .work-img .img-overlay:hover {
+    opacity:1;
+    z-index:1;
+}
+
+/* WHY */
+
+#why {
+  padding: 5rem 0;
+  background-color: #f6f6f6;
+}
+
+#why .fa{
+  color: #be2835;
+  padding: 15px 0;
+}
+
+
+/* PRICING */
+
+#pricing{
+  padding: 5rem 0;
+  background-color: #f6f6f6;
+}
+
+#pricing .card .card-header{
+  background-color: #6e6e6e;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+#pricing .card .standard{
+  background-color: #be2835;
+  font-size: 1.3em;
+  padding: 15px 0;
+}
+
+#pricing .card .card-header:hover{
+  background-color: #be2835;
+
+}
+
+#pricing .card{
+  margin-top: 20px;
+}
+
+/* CONTACT */
+
+#contact{
+  padding: 5rem 0;
+}
+
+/* FOOTER */
+
+#footer{
+padding: 2rem 0;
+background-color: #484848;
+color: #fff;
+}
+
+#footer a{
+  color: white;
+}
+#footer a:hover{
+  color: #fa6470;
+}
+
+#footer .fa{
+  padding:  0 5px;
+}
